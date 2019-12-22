@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'VT323', 'Ubuntu Mono', 'Fira Mono';
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 16px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #b5e3f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #0b7a9c;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #006888;
+}
+
+/* Responsive Screen */
+@media only screen and (max-width: 800px) {
+
+    .title {
+        font-size: 2em;
+    }
+
+    .test-area {
+        width: 80vw;
+    }
+}
+
+/* BACKGROUND*/
+
+.gridcontainer {
+    height: 100vh;
+    background-image: url('giphy.gif');
+    background-size: cover;
+    /* background-position-y: 70%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    z-index: -1;
+    border: 1px solid blue;
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "item1 item1"
+    "item2 item3"
+    "item4 item5"
+    "item6 item7"
+    ;
+
+}
+
+.title {
+    margin-top: 12vh;
+    font-size: 3em;
+}
+
+/* JAVASCRIPT TEST AREA */
+
+.test-area {
+    width: 70vw;
+    height: 60vh;
+    box-sizing: border-box;
+    padding: 2em;
+    background-color: rgb(255, 255, 255, 0.8);
+    margin: auto;
+    text-align: left;
+    color: rgb(2, 40, 90);
+    overflow: auto;
+}
+
+.hometitle-1 {
+    grid-area: item1;
+    display: c;
+}
+
+.awaytitle-2 {
+    grid-area: item2;
+}
+
+.homescore-3 {
+    grid-area: item3;
+}
+.awayscore-4 {
+    grid-area: item4;
+}
+
+.homeadd-5 {
+    grid-area: item5;
+}
+
+.awayadd-6 {
+    grid-area: item6;
+}
+
+.homesubtract-7 {
+    grid-area: item7;
+}
+
+.awaysubtract-8 {
+    grid-area: item7;
+}
+
+.bothreset-9 {
+    grid-area: item7;
+}
+
+
+
+/* VISUAL NOVEL */
+
+.buttonStyle {
+    background-color: darkgreen;
+    width: 100px;
+    color: white;
+    text-align: center;
+    padding: 10px
+}
+
+.invisible {
+    display: none;
+}
